@@ -1,0 +1,13 @@
+POST http://localhost:3000/V1/JournalsTable/Insert/BulkAsIs
+Content-Type: application/json
+
+[
+  {
+  "Date": "",
+  "Narration": "",
+  "ChqRefNo": "",
+  "ValueDt": "",
+  "WithdrawalAmt": "",
+  "DepositAmt": ""
+}
+]

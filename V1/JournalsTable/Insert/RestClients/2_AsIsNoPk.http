@@ -1,0 +1,11 @@
+POST http://localhost:3000/V1/JournalsTable/Insert/AsIsNoPk
+Content-Type: application/json
+
+{
+  "Date": "",
+  "Narration": "",
+  "ChqRefNo": "",
+  "ValueDt": "",
+  "WithdrawalAmt": "",
+  "DepositAmt": ""
+}
