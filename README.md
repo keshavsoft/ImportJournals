@@ -58,4 +58,8 @@ Ensure Node.js version is v22.22 or above
 
 - from v3 import perfect in ui
 
+### 1.0.4
+
+- from v4 with 5 files
+
 ---

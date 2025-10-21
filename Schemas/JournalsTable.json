@@ -2,7 +2,7 @@
     "tableName": "JournalsTable",
     "columns": [
         {
-            "field": "KS-Date",
+            "field": "KS_Date",
             "title": "DateAsNumber",
             "unique": true,
             "type": "text",

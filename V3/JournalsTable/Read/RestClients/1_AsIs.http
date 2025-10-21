@@ -1,1 +1,1 @@
-GET http://localhost:9012/V3/JournalsTable/Read/AsIs
+GET http://localhost:9012/AboutData/Read/AllFiles
