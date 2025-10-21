@@ -1,6 +1,6 @@
 {
-  "name": "jsoncrud",
-  "version": "1.0.0",
+  "name": "ImportJournals",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "type": "module",
