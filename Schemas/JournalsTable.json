@@ -2,13 +2,19 @@
     "tableName": "JournalsTable",
     "columns": [
         {
+            "field": "KS-Date",
+            "title": "DateAsNumber",
+            "unique": true,
+            "type": "text",
+            "isInput": true
+        },
+        {
             "field": "Date",
             "title": "Date",
             "unique": true,
             "type": "text",
             "isInput": true,
-            "isAutoFocus": true,
-            "defaultvalue": "2nd"
+            "isAutoFocus": true
         },
         {
             "field": "Narration",
@@ -16,8 +22,7 @@
             "unique": true,
             "type": "text",
             "isInput": true,
-            "isAutoFocus": true,
-            "defaultvalue": "2nd"
+            "isAutoFocus": true
         },
         {
             "field": "ChqRefNo",

@@ -26,48 +26,15 @@ const StartFunc = (event) => {
                     Date: excelDateToJSDate(LoopInsideOject["KS-Date"]).toLocaleDateString('en-CA')
                 }
             });
-            console.log("sheetData : ", XLSX.utils, sheetData, jVarLocalNewArray);
+
+            // console.log("sheetData : ", XLSX.utils, sheetData, jVarLocalNewArray);
+            
             showInTable({ inData: jVarLocalNewArray });
         };
 
         reader.readAsBinaryString(file);
     }
 };
-
-
-let StartFunc_20Oct2025 = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    // debugger
-    if (file.type === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
-        reader.onload = (e) => {
-            const data = e.target.result;
-            // const workbook = XLSX.read(data, { type: "binary", cellDates: true, dateNF: 'YYYY-MM-DD' });
-            // const workbook = XLSX.read(data, { raw: false });
-            const workbook = XLSX.read(data, { type: 'binary', cellDates: true, dateNF: 'YYYY-MM-DD;@' });
-
-            //  { cellDates: true }
-            const firstSheetName = workbook.SheetNames[0];
-            // const sheetData = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[firstSheetName], { raw: false });
-            // const sheetData = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName], { raw: false });
-            const sheetData = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName], { header: 1, raw: false });
-
-            // const sheetData = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName], { header: 1, raw: false, dateNF: 'mm-dd-yy' });
-
-            const jVarLocalNewArray = sheetData.map(element => {
-                return {
-                    ...element,
-                    Date: excelDateToJSDate(element["KS-Date"]).toLocaleDateString('en-CA')
-                }
-            });
-            console.log("sheetData : ", XLSX.utils, sheetData, jVarLocalNewArray);
-            showInTable({ inData: jVarLocalNewArray });
-        };
-
-        reader.readAsBinaryString(file);
-    }
-};
-
 
 function excelDateToJSDate(excelDate) {
     // Excel's epoch is Jan 1, 1900, but it incorrectly assumes 1900 was a leap year.
