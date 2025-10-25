@@ -1,0 +1,1 @@
+GET http://localhost:9012/V6/file3/Read/KeyCount/{Column name}

@@ -66,4 +66,8 @@ Ensure Node.js version is v22.22 or above
 
 - from v5 perfect
 
+### 1.0.6
+
+- sort perfect in Ui
+
 ---

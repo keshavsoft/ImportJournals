@@ -1,6 +1,6 @@
 {
     "tableName": "file2",
-    "columns": [
+     "columns": [
         {
             "field": "KS_Date",
             "title": "DateAsNumber",
@@ -14,7 +14,8 @@
             "unique": true,
             "type": "text",
             "isInput": true,
-            "isAutoFocus": true
+            "isAutoFocus": true,
+            "isSortable": true
         },
         {
             "field": "Narration",
@@ -40,7 +41,8 @@
             "type": "text",
             "isInput": true,
             "isAutoFocus": true,
-            "defaultvalue": "2nd"
+            "defaultvalue": "2nd",
+            "isSortable": true
         },
         {
             "field": "WithdrawalAmt",
@@ -53,7 +55,8 @@
             "ShowDifference": true,
             "align": "right",
             "minusColumn": "DepositAmt",
-            "footerFormatter": "TotalFormatter"
+            "footerFormatter": "TotalFormatter",
+            "isSortable": true
         },
         {
             "field": "DepositAmt",
@@ -66,10 +69,11 @@
             "ShowDifference": true,
             "align": "right",
             "minusColumn": "WithdrawalAmt",
-            "footerFormatter": "TotalFormatter"
+            "footerFormatter": "TotalFormatter",
+            "isSortable": true
         }
     ],
-    "data": [],
+   "data": [],
     "Vertical": [],
     "DataTableOptions": {
         "Header": {
