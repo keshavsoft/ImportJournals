@@ -1,0 +1,12 @@
+POST http://localhost:9012/V7/file3/Insert/AsIsAndTS
+Content-Type: application/json
+
+{
+  "KS_Date": "",
+  "Date": "",
+  "Narration": "",
+  "ChqRefNo": "",
+  "ValueDt": "",
+  "WithdrawalAmt": "",
+  "DepositAmt": ""
+}

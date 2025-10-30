@@ -83,6 +83,7 @@
     },
     "SubRoutes": [
         "Read",
-        "Insert"
+        "Insert",
+        "Import"
     ]
 }

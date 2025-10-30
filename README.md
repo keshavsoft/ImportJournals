@@ -70,4 +70,8 @@ Ensure Node.js version is v22.22 or above
 
 - sort perfect in Ui
 
+### 1.0.7
+
+- Latest UI and api import perfect
+
 ---
